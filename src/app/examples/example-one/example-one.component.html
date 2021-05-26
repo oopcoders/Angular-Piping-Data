@@ -1,0 +1,11 @@
+<p>In this example, we subscribe to the letter array in the component.</p>
+
+<div>
+	<span class="badge rounded-pill bg-danger" *ngFor="let letter of letters">{{letter.letter}}</span>
+
+</div>
+
+<div class="mt-5">
+	<button class="btn btn-primary btn-sm m-2" (click)="limitLetters(5)">Display only five letters</button>
+	<button class="btn btn-success btn-sm m-2" (click)="getLetters()">Display all letters</button>
+</div>
